@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Quiz Application Design System */
+
+@layer base {
+  :root {
+    --background: 210 50% 95%;
+    --foreground: 220 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    --primary: 174 85% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 95% 60%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 210 30% 90%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 174 85% 28%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 30% 85%;
+    --input: 210 30% 85%;
+    --ring: 174 85% 28%;
+
+    --radius: 1rem;
+
+    /* Quiz specific tokens */
+    --quiz-gradient-start: 200 60% 94%;
+    --quiz-gradient-end: 210 50% 90%;
+    --quiz-card-bg: 200 40% 96%;
+    --quiz-question-header: 45 95% 65%;
+    --quiz-option-hover: 174 40% 95%;
+    --quiz-option-selected: 174 85% 28%;
+    --quiz-paw-accent: 30 60% 70%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 30% 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 30% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 30% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 174 75% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 80% 50%;
+    --secondary-foreground: 220 20% 10%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 174 75% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 174 75% 40%;
+
+    --quiz-gradient-start: 220 30% 12%;
+    --quiz-gradient-end: 220 30% 8%;
+    --quiz-card-bg: 220 30% 18%;
+    --quiz-question-header: 45 80% 45%;
+    --quiz-option-hover: 174 30% 20%;
+    --quiz-option-selected: 174 75% 40%;
+    --quiz-paw-accent: 30 50% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-sans {
+    font-family: 'Inter', sans-serif;
+  }
+}
